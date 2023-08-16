@@ -5,7 +5,7 @@ import "components/InterviewerList.scss";
 
 import InterviewerListItem from "components/InterviewerListItem";
 
-function InterviewerList(props) {
+const InterviewerList = (props) => {
   const interviewers = props.interviewers.map(interviewer => {
     return (
       <InterviewerListItem
@@ -25,7 +25,7 @@ function InterviewerList(props) {
       <ul className="interviewers__list">{interviewers}</ul>
     </section>
   );
-}
+};
 
 InterviewerList.propTypes = {
   value: PropTypes.number,
