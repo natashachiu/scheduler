@@ -53,7 +53,12 @@ const fixtures = {
   }
 };
 
+// export fake axios library
 export default {
+  // set a default base url for axios
+  // our app needs an obj that can make a request to an API
+  defaults: { baseURL: "" },
+
   get: jest.fn(url => {
     if (url === "/api/days") {
       return Promise.resolve({
