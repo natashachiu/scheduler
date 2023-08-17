@@ -15,5 +15,6 @@
         "jest": true
       }
     }
-  ]
+  ],
+  "rules": {"func-style": "off"}
 }

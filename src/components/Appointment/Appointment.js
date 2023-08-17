@@ -30,7 +30,6 @@ export default function Appointment(props) {
       student: name,
       interviewer
     };
-
     transition(SAVING);
 
     props
