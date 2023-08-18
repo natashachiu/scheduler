@@ -9,12 +9,19 @@
     {
       "files": [
         "**/*.test.js",
-        "**/*.test.jsx"
+        "**/*.test.jsx",
+        "**/*.spec.js",
+        "**/*.spec.jsx"
       ],
       "env": {
         "jest": true
       }
     }
   ],
-  "rules": {"func-style": "off"}
+  "rules": {
+    "func-style": "off"
+  },
+  "globals": {
+    "cy": true
+  }
 }
